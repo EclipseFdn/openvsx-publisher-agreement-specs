@@ -1,0 +1,7 @@
+swaggerUI: false
+apiTitle: openvsx-publiser-agreement-specs
+splitSpec: false
+codeSamples: false
+travis: true
+oasVersion: 3.0.0
+repo: EclipseFdn/openvsx-publiser-agreement-specs
