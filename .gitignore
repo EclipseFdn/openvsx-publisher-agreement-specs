@@ -1,0 +1,9 @@
+node_modules/
+web_deploy/
+.project
+.classpath
+.settings/
+config/
+/target/
+/build/
+/example.md
