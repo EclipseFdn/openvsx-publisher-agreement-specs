@@ -51,7 +51,7 @@ paths:
     parameters:
       - name: eclipse_username
         in: path
-        description: The username of the user to read or update.
+        description: The Eclipse username.
         required: true
         schema:
           type: string
@@ -110,8 +110,8 @@ components:
         DocumentID:
           $ref: '#/components/schemas/ObjectID'
         Version:
-          type: string
-          description: The version string for the current document
+          type: integer
+          description: The version number for the current document
         EffectiveDate:
           $ref: '#/components/schemas/DateTime'
         ReceivedDate:
