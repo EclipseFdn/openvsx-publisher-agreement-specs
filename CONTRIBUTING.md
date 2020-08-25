@@ -1,16 +1,16 @@
-# Contributing to openvsx-publiser-agreement-specs
+# Contributing to openvsx-publisher-agreement-specs
 
 Thanks for your interest in this project.
 
 ## Project description
 
-* https://github.com/eclipsefdn/openvsx-publiser-agreement-specs
+* https://github.com/eclipsefdn/openvsx-publisher-agreement-specs
 
 ## Developer resources
 
 The project maintains the following source code repositories
 
-* https://github.com/eclipsefdn/openvsx-publiser-agreement-specs
+* https://github.com/eclipsefdn/openvsx-publisher-agreement-specs
 
 ## Eclipse Contributor Agreement
 

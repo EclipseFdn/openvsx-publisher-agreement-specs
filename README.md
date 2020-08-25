@@ -1,14 +1,14 @@
-# openvsx-publiser-agreement-specs
+# openvsx-publisher-agreement-specs
 
 Publisher Agreements are legal agreements between the Eclipse Foundation and individual publishers.
 
-[![Build Status](https://travis-ci.org/EclipseFdn/openvsx-publiser-agreement-specs.svg?branch=master)](https://travis-ci.org/EclipseFdn/openvsx-publiser-agreement-specs)
+[![Build Status](https://travis-ci.org/EclipseFdn/openvsx-publisher-agreement-specs.svg?branch=master)](https://travis-ci.org/EclipseFdn/openvsx-publisher-agreement-specs)
 
 ## Links
 
-- [Reference Documentation (ReDoc)](https://eclipsefdn.github.io/openvsx-publiser-agreement-specs/)
-- [SwaggerUI](https://eclipsefdn.github.io/openvsx-publiser-agreement-specs/swagger-ui/)
-- OpenAPI Raw Files: [JSON](https://eclipsefdn.github.io/openvsx-publiser-agreement-specs/openapi.json) [YAML](https://eclipsefdn.github.io/openvsx-publiser-agreement-specs/openapi.yaml)
+- [Reference Documentation (ReDoc)](https://eclipsefdn.github.io/openvsx-publisher-agreement-specs/)
+- [SwaggerUI](https://eclipsefdn.github.io/openvsx-publisher-agreement-specs/swagger-ui/)
+- OpenAPI Raw Files: [JSON](https://eclipsefdn.github.io/openvsx-publisher-agreement-specs/openapi.json) [YAML](https://eclipsefdn.github.io/openvsx-publisher-agreement-specs/openapi.yaml)
 
 **Warning:** All above links are updated only after Travis CI finishes deployment
 
@@ -37,8 +37,8 @@ Deploys docs to GitHub Pages. You don't need to run it manually if you have Trav
 
 ## Contributing
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) the [eclipsefdn/openvsx-publiser-agreement-specs](https://github.com/eclipsefdn/openvsx-publiser-agreement-specs) repository
-2. Clone repository: `git clone https://github.com/[your_github_username]/openvsx-publiser-agreement-specs.git`
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the [eclipsefdn/openvsx-publisher-agreement-specs](https://github.com/eclipsefdn/openvsx-publisher-agreement-specs) repository
+2. Clone repository: `git clone https://github.com/[your_github_username]/openvsx-publisher-agreement-specs.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -m 'Add some feature' -s`
 5. Push feature branch: `git push origin my-new-feature`
@@ -54,7 +54,7 @@ SPDX-License-Identifier: EPL-2.0
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/eclipsefdn/openvsx-publiser-agreement-specs/issues/new).
+Have a bug or a feature request? Please search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/eclipsefdn/openvsx-publisher-agreement-specs/issues/new).
 
 ## Author
 
@@ -74,4 +74,4 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 
 ## Copyright and license
 
-Copyright 2020 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [openvsx-publiser-agreement-specs authors](https://github.com/eclipsefdn/openvsx-publiser-agreement-specs/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/eclipsefdn/openvsx-publiser-agreement-specs/blob/src/LICENSE).
+Copyright 2020 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [openvsx-publisher-agreement-specs authors](https://github.com/eclipsefdn/openvsx-publisher-agreement-specs/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/eclipsefdn/openvsx-publisher-agreement-specs/blob/src/LICENSE).
