@@ -39,8 +39,8 @@ paths:
                   type: string
                   description: The version number of the document/agreement.
       responses:
-        '204':
-          description: Accepted
+        '201':
+          description: Created
           content:
             application/json:
               schema:
