@@ -1,0 +1,154 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: openvsx-publisher-agreement
+  license:
+    name: Eclipse Public License - 2.0
+    url: 'https://www.eclipse.org/legal/epl-2.0/'
+servers:
+  - url: 'https://api.eclipse.org/openvsx'
+    description: Production endpoint for openvsx-publisher-agreement REST API.
+security:
+  - OAuth2:
+      - openvsx_publisher_agreement
+paths:
+  /publisher_agreement:
+    get:
+      summary: Publisher Agreement
+      description: Fetch the open-vsx.org publisher aggrement for the current user.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        '404':
+          description: Agreement not found
+    post:
+      summary: Create Publisher Agreement
+      description: Create an open-vsx.org publisher agreement for the current user.
+      requestBody:
+        description: The version number to update or insert for the current logged in user
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                Version:
+                  type: string
+                  description: The version number of the document/agreement.
+      responses:
+        '204':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        '400':
+          description: Invalid data
+  '/publisher_agreement/{eclipse_username}':
+    parameters:
+      - name: eclipse_username
+        in: path
+        description: The username of the user to read or update.
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Retrieve Publisher Agreement
+      description: Retrieve the open-vsx.org publisher aggrement of a user. The current user can  retrieve his own Publisher Agreement but only an admin can retrieve a Publisher Agreement of another user.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        '404':
+          description: No agreement found for designated in user
+    delete:
+      summary: Revoke Publisher Agreement
+      responses:
+        '204':
+          description: Accepted
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: 'https://accounts.eclipse.org/oauth2/authorize'
+          tokenUrl: 'https://accounts.eclipse.org/oauth2/token'
+          scopes:
+            openvsx_publisher_agreement: Submit and revoke your open-vsx publisher agreement.
+            openid: Know who you are on accounts.eclipse.org.
+            email: View your email address.
+            profile: View basic information about your account.
+  schemas:
+    ObjectID:
+      description: Unique identifier for an addressable object in the API.
+      type: string
+      minimum: 1
+    DateTime:
+      type: string
+      format: datetime
+      description: |
+        Date string in the RFC 3339 format. Example, `1990-12-31T15:59:60-08:00`.
+
+        More on this standard can be read at https://tools.ietf.org/html/rfc3339.
+    Comments:
+      type: array
+      items:
+        type: string
+        description: A comment made on the current entity
+    Response:
+      type: object
+      properties:
+        PersonID:
+          $ref: '#/components/schemas/ObjectID'
+        DocumentID:
+          $ref: '#/components/schemas/ObjectID'
+        Version:
+          type: string
+          description: The version string for the current document
+        EffectiveDate:
+          $ref: '#/components/schemas/DateTime'
+        ReceivedDate:
+          $ref: '#/components/schemas/DateTime'
+        ExpiprationDate:
+          $ref: '#/components/schemas/DateTime'
+        ScannedDocumentBLOB:
+          type: string
+          description: The signed document as a blob entity.
+        ScannedDocumentMime:
+          type: string
+          description: The MIME type for the posted document blob.
+        ScannedDocumentFileName:
+          type: string
+          description: The name of the document being posted.
+        SysDocument:
+          type: object
+          properties:
+            DocumentID:
+              $ref: '#/components/schemas/ObjectID'
+            Version:
+              type: string
+              description: The version string for the current system document
+            DocumentBLOB:
+              type: string
+              description: Literal document content blob entity
+            Description:
+              type: string
+              description: Description of the system document.
+            Comments:
+              $ref: '#/components/schemas/Comments'
+            IsActive:
+              type: boolean
+              description: placeholder
+            Type:
+              type: string
+              description: placeholder
+            ContentType:
+              type: string
+              description: placeholder
