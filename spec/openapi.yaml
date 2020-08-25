@@ -14,8 +14,6 @@ servers:
 security:
   - OAuth2:
     - openvsx_publisher_agreement
-    - openid
-    - profile
 
 paths:
   /publisher_agreement:
@@ -81,15 +79,16 @@ paths:
           description: Accepted
           
 components:
+
   securitySchemes:
     OAuth2:
-      type: oAuth2
+      type: oauth2
       flows:
         authorizationCode:
           authorizationUrl: https://accounts.eclipse.org/oauth2/authorize
           tokenUrl: https://accounts.eclipse.org/oauth2/token
           scopes:
-            openvsx_publisher_agreement: Grant the application access to submit and revoke your open-vsx publisher agreement.
+            openvsx_publisher_agreement: Submit and revoke your open-vsx publisher agreement.
             openid: Know who you are on accounts.eclipse.org.
             email: View your email address.
             profile: View basic information about your account.
