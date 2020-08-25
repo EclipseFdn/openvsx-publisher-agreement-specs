@@ -15,3 +15,6 @@ deploy:
     condition: '"$TRAVIS_BRANCH" != "master" && "$TRAVIS_BRANCH" != "gh-pages"'
   email: chris.guindon@eclipse-foundation.org
   name: Christopher Guindon
+env:
+  global:
+    secure: q17IyRnuiMcoCHe1Hk7eQdgDnwFbEjnhpCRmEnq1gIosPweUbcfGfP2f8hy9XZ/MbJI4zJ9VwDnx2qGXGVJiuVR5aHrs+fCfABuIjPATd1hspeVOr3Uid0ypSb0FWSvwpYkdMZpK1mAFwao7XHLBuDSl0BhwO1U6jOu0TVX6Iv6+e7NbU7VZYdDJJS4CpohHA5jiQ2foDlcptXSUhQjgGthEbJ31ivnw6nsCHEvDqPND3L2SsYWduBBjuzrN1TQnrPDlQGD3SPV6oo/9OA23xt2V5+7BroLlVPk6KearTFPSEsL537MRhto7bmO9lg1wHzPei4rb/J+dh+slT9H9nAd5nSSzwaccvin6ZQcmmukElbTSVfB/zeSoryCREMYNZ8A1mPdBqsLFXOnDWyxuG58I2EinR01LbsmjhZG5K8upIY2sFIiZmB2C5VSC7AqWhSB3W5AhK5Q6hClzkGMh5dw2PMl12QMMzV6iRV5HvSdeOkSi2Yi5WQtf0StcTTbnFRImsB9260lqMoU7VcZuwr2lUSW1dEEZE4cOdhj3zV7DP0yaTU5855eVOVNO+bOmAFum2T//HVuAVjNjUe2KK38q09W6Z1uZQqen6JEfgIeC6mt6QUrEjf4DJs3zEAIJYq4coIM6YF+LVEVVR18ASRdzoPQHZci8Ymze7AhLfTM=
