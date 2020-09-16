@@ -36,7 +36,7 @@ paths:
               type: object
               properties:
                 Version:
-                  type: string
+                  type: integer
                   description: The version number of the document/agreement.
       responses:
         '201':

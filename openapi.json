@@ -53,7 +53,7 @@
                 "type": "object",
                 "properties": {
                   "Version": {
-                    "type": "string",
+                    "type": "integer",
                     "description": "The version number of the document/agreement."
                   }
                 }
