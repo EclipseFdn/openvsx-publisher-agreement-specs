@@ -126,7 +126,7 @@ components:
           $ref: "#/components/schemas/DateTime"
         ReceivedDate:
           $ref: "#/components/schemas/DateTime"
-        ExpiprationDate:
+        ExpirationDate:
           $ref: "#/components/schemas/DateTime"
         ScannedDocumentBLOB:
           type: string
