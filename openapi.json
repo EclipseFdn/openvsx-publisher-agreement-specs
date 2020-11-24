@@ -62,8 +62,8 @@
           }
         },
         "responses": {
-          "201": {
-            "description": "Created",
+          "200": {
+            "description": "Ok",
             "content": {
               "application/json": {
                 "schema": {
@@ -74,6 +74,9 @@
           },
           "400": {
             "description": "Invalid data"
+          },
+          "409": {
+            "description": "Conflict"
           }
         }
       }
@@ -174,7 +177,7 @@
           "ReceivedDate": {
             "$ref": "#/components/schemas/DateTime"
           },
-          "ExpiprationDate": {
+          "ExpirationDate": {
             "$ref": "#/components/schemas/DateTime"
           },
           "ScannedDocumentBLOB": {

@@ -39,14 +39,16 @@ paths:
                   type: integer
                   description: The version number of the document/agreement.
       responses:
-        '201':
-          description: Created
+        '200':
+          description: Ok
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Response'
         '400':
           description: Invalid data
+        '409':
+          description: Conflict
   '/publisher_agreement/{eclipse_username}':
     parameters:
       - name: eclipse_username
@@ -116,7 +118,7 @@ components:
           $ref: '#/components/schemas/DateTime'
         ReceivedDate:
           $ref: '#/components/schemas/DateTime'
-        ExpiprationDate:
+        ExpirationDate:
           $ref: '#/components/schemas/DateTime'
         ScannedDocumentBLOB:
           type: string
