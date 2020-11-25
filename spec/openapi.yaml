@@ -33,15 +33,21 @@ paths:
       summary: Create Publisher Agreement
       description: Create an open-vsx.org publisher agreement for the current user.
       requestBody:
-        description: The version number to update or insert for the current logged in user
+        description: The GitHub_handle must match what the Eclipse Foundation has on file for the user to successfully sign the publisher agreement.
         content:
           application/json:
             schema:
               type: object
               properties:
-                Version:
+                version:
                   type: integer
                   description: The version number of the document/agreement.
+                github_handle:
+                  type: string
+                  description: The GitHub username of the user. This must match what the Eclipse Foundation has on file for the user to successfully sign the publisher agreement.
+              required:
+                - version
+                - github_handle
       responses:
         200:
           description: Ok
