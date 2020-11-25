@@ -33,7 +33,7 @@ paths:
       summary: Create Publisher Agreement
       description: Create an open-vsx.org publisher agreement for the current user.
       requestBody:
-        description: The GitHub_handle must match what the Eclipse Foundation has on file for the user to successfully sign the publisher agreement.
+        description: Required information to sign an open-vsx.org publisher aggrement.
         content:
           application/json:
             schema:
