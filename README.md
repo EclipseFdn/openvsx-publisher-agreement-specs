@@ -2,8 +2,6 @@
 
 Publisher Agreements are legal agreements between the Eclipse Foundation and individual publishers.
 
-[![Build Status](https://travis-ci.org/EclipseFdn/openvsx-publisher-agreement-specs.svg?branch=master)](https://travis-ci.org/EclipseFdn/openvsx-publisher-agreement-specs)
-
 ## Links
 
 - [Reference Documentation (ReDoc)](https://eclipsefdn.github.io/openvsx-publisher-agreement-specs/)
