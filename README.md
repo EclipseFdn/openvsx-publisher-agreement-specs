@@ -1,5 +1,13 @@
 # openvsx-publisher-agreement-specs
 
+---
+**NOTE**
+
+This project was migrated to [Eclipse Gitlab](https://gitlab.eclipse.org/eclipsefdn/it/api/openvsx-publisher-agreement-specs) on October 12, 2021.
+
+---
+
+
 Publisher Agreements are legal agreements between the Eclipse Foundation and individual publishers.
 
 ## Links
